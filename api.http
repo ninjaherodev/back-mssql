@@ -1,0 +1,5 @@
+### Recuperar todas las peliculas
+GET http://localhost:3050/api/v1/products
+
+### Recuperar peliculas que contenga un genero especifico
+GET http://localhost:3050/api/v1/products?genre=IA
