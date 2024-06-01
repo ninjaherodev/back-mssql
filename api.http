@@ -1,5 +1,32 @@
 ### Recuperar todas las peliculas
 GET http://localhost:3050/api/v1/products
 
-### Recuperar peliculas que contenga un genero especifico
+### Recuperar peliculas que contenga un genero especifico By query
 GET http://localhost:3050/api/v1/products?genre=IA
+
+### Recuperar una pelicula por Id By Params
+GET http://localhost:3050/api/v1/products/1
+
+### Crear una pelicula POST
+POST http://localhost:3050/api/v1/products
+Content-Type: application/json
+
+{
+  "title":"10",
+  "year":2023,
+  "duration":120,
+  "poster":"https://www.example.com/posters/shawshank_redemption.jpg",
+  "genre":["Comedy"]
+
+}
+
+### Actualizar una pelicula PATH
+PATCH  http://localhost:3050/api/v1/products/1
+Content-Type: application/json
+
+{
+ 
+  "year":2023
+  
+
+}
